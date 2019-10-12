@@ -1,0 +1,96 @@
+<form  #formPedido="ngForm" (ngSubmit)="guardarDatospedido(formPedido)" >
+
+        <div class="row">
+                <div class="col s12">
+                  
+                  <div class="row">
+                      
+                    <div class="input-field col s6">
+                      <input  
+                        id="nombres"
+                        type="text"
+                        name="nombres"
+                        required
+                        [(ngModel)]="pedidos.nombresComprador" 
+                        class="validate"
+                        >
+                       
+                      <label for="Nombres">Nombres</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input  
+                        id="apellidos"
+                        name="apellidos" 
+                        type="text"
+                        required
+                        [(ngModel)]="pedidos.apellidosComprador"
+                        class="validate"
+                        #pedidos="ngModel">
+
+                      <label for="Apellidos">Apellidos</label>
+                    </div>
+                  </div>
+                  <div class="input-field col s12">
+                    <input 
+                      id="Fecha_de_nacimiento" 
+                      name="Fecha_de_nacimiento"
+                      type="date"  
+                      required                      
+                      [(ngModel)]="pedidos.fechaNacimiento"
+                      class="validate "
+                      #pedidos="ngModel">
+                    <label for="Fecha_de_nacimiento">Fecha de nacimiento</label>
+                  </div>
+                </div>
+                
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input  
+                        id="Direccion" 
+                       name="Direccion" 
+                        type="text" 
+                        required
+                        [(ngModel)]="pedidos.direccionEntrega"
+                        class="validate"
+                        #pedidos="ngModel">
+                      <label for="Direccion">Dirección</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                        <div class="input-field col s12" >
+                                <select name="Ciudad"  [(ngModel)]="pedidos.CiudadEntrega"  required>
+                                  <option value="" disabled selected>Seleccione</option>
+                                  <option value="Medellin">Medellin</option>
+                                  <option value="Bello">Bello</option>
+                                  <option value="Sabaneta">Sabaneta</option>
+                                  <option value="itagüi">itagüi</option>
+
+                                </select>
+                                <label>Ciudad</label>
+                              </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      Subir PDF de la Cedula:
+                      <div class="input-field inline">
+                           <!-- <input type="file" > -->
+                           
+                           <input  
+                            id="Cedula" 
+                            type="file" 
+                            name="Cedula"
+                            required
+                            class="inputfile"  
+                            size-limit="5"
+                            [(ngModel)]="pedidos.Cedula">
+                           <label for="Cedula">Choose a file</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <button type="submit" class="btn btn-large">ENVIAR</button>
+                  </div>
+                
+              
+              </div>
+</form >
