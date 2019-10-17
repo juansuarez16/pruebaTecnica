@@ -1,27 +1,25 @@
-# SupervisionAngular
+# PruebaTecnica
+Este proyecto no esta terminado del todo porque no tengo mucho conocimiento de angular, se hacer un crud en otro lenguaje, pero si me dan la oportunidad de estar en la empresa quisiera aprender mucho mas de este lenguaje ya que lo que habia hablado con la reclutadora mi conocimiento se centra mas que todo en NODE JS, el proyecto cosume el API me guarda el producto en el localstorge y guarda el pedido con los datos y los lista tiene algo de validaciones.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Intalaciones previas necesarias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+nodeJS -- https://nodejs.org/es/download/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+npm install
 
-## Running unit tests
+Angular -- npm install -g @angular/cli
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+materialize --npm i materialize-css
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Todo listo
 
-## Further help
+ejecuta el comando -- ng serve --port 3000 -o
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
