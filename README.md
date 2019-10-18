@@ -12,6 +12,7 @@ nodeJS -- https://nodejs.org/es/download/
 npm install
 
 Angular -- npm install -g @angular/cli
+-- npm i angular
 
 materialize --npm i materialize-css
 
